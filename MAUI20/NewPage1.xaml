@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI20.NewPage1"
+             Title="NewPage1">
+    <ScrollView>
+        <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25"
+        x:Name="MainStack">
+
+            <Label
+            Text="Animowany gif!"
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level1" />
+            <Image x:Name="Gif1">
+                <Image.Source>
+                    <UriImageSource Uri="https://i.pinimg.com/originals/31/a7/2a/31a72afda250825d993400c3ef28c55c.gif"
+                    CacheValidity="7:00:00:00" />
+                </Image.Source>
+                <Image.HeightRequest>
+                    300
+                </Image.HeightRequest>
+                <Image.Aspect>
+                    AspectFit
+                </Image.Aspect>
+                <Image.IsAnimationPlaying>
+                    True
+                </Image.IsAnimationPlaying>
+            </Image>
+            <Button
+                Text="Tryb Aspect"
+                Clicked="OnButtonClicked"/>
+            <Label
+                x:Name="TrybAspectu"
+                Text="Aspect: AspectFit"
+                HorizontalOptions="Center"
+                FontSize="Large"/>
+
+            <Image x:Name="Zdjecie1">
+                <Image.Source>
+                    <UriImageSource Uri="https://i.ytimg.com/vi/EAexp0w3H3c/maxresdefault.jpg"
+                         CacheValidity="7:00:00:00" />
+                </Image.Source>
+                <Image.HeightRequest>
+                    300
+                </Image.HeightRequest>
+                <Image.Aspect>
+                    AspectFit
+                </Image.Aspect>
+            </Image>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
