@@ -5,10 +5,21 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MAUI20"
     Title="MAUI20">
+    <TabBar>
+        <Tab Title="MAUI 20.2">
+            <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+        </Tab>
+        <Tab Title="MAUI 20.3">
+            <ShellContent
+            Title="New Page"
+            ContentTemplate="{DataTemplate local:NewPage1}"
+            Route="NewPage1" />
+        </Tab>
+    </TabBar>
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+
 
 </Shell>
