@@ -29,3 +29,10 @@ public partial class NewPage1 : ContentPage
         }
 	}
 }
+
+/*Nazwa:OnButtonClicked 
+ * Opis:Sprawdza aktualny tryb wyœwietlania obrazu (Aspect) i zmienia go na kolejny: AspectFit -> Fill -> AspectFill -> AspectFit.
+ * parametry: sender - obiekt, który wywo³a³ zdarzenie (przycisk), e - argumenty zdarzenia (nieu¿ywane).
+ * zwracany typ:void (nie zwraca ¿adnej wartoœci).
+ * autor:Ja
+ */
