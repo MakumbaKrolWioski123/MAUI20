@@ -19,7 +19,7 @@
                     CacheValidity="7:00:00:00" />
                 </Image.Source>
                 <Image.HeightRequest>
-                    200
+                    300
                 </Image.HeightRequest>
                 <Image.Aspect>
                     AspectFit
@@ -33,9 +33,22 @@
                 Clicked="OnButtonClicked"/>
             <Label
                 x:Name="TrybAspectu"
-                Text=""
-                Style="{StaticResource Body}"
-                SemanticProperties.HeadingLevel="Level2" />
+                Text="Aspect: AspectFit"
+                HorizontalOptions="Center"
+                FontSize="Large"/>
+
+            <Image x:Name="Zdjecie1">
+                <Image.Source>
+                    <UriImageSource Uri="https://i.ytimg.com/vi/EAexp0w3H3c/maxresdefault.jpg"
+                         CacheValidity="7:00:00:00" />
+                </Image.Source>
+                <Image.HeightRequest>
+                    300
+                </Image.HeightRequest>
+                <Image.Aspect>
+                    AspectFit
+                </Image.Aspect>
+            </Image>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

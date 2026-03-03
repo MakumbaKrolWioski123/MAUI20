@@ -12,17 +12,20 @@ public partial class NewPage1 : ContentPage
 		if (Gif1.Aspect == Aspect.AspectFit)
 		{
 			Gif1.Aspect = Aspect.Fill;
+			TrybAspectu.Text = "Aspect: Fill";
 
-		}
+        }
 		else if (Gif1.Aspect == Aspect.Fill)
 		{
 			{
 				Gif1.Aspect = Aspect.AspectFill;
-			}
+				TrybAspectu.Text = "Aspect: AspectFill";
+            }
 		}
 		else if (Gif1.Aspect == Aspect.AspectFill)
 		{
 			Gif1.Aspect = Aspect.AspectFit;
-		}
+			TrybAspectu.Text = "Aspect: AspectFit";
+        }
 	}
 }
