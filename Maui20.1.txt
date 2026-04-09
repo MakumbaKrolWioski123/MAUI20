@@ -1,0 +1,4 @@
+1.Logo.png pochodzi z pliku lokalnego, został uzyty ImageSource.FromFile();
+2.Obraz z tego adresu będzie przechowywany w cache 5 dni.
+3.Nie ponieważ jest linijka IsAnimationPlaying="False" które nie pozwala aby gif się odtwarzał.
+4.ImageButton będzie miał kształt koła, a przy wymiarach 50x50 będzie idealnie się zaokrąglał
